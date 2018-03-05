@@ -1,0 +1,30 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+
+# Stanford's lib
+*StanfordCPPLib
+lib/
+# Stanford's lib resource path defaults
+res/images/picture-of-kitten.jpg
+res/readme.txt
+
+#Built files
+*build-*
+
+#Default projects
+*empty-project*
+*simple-project*
+
+.DS_Store
