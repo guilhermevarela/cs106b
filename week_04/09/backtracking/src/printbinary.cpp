@@ -11,27 +11,24 @@
 #include "console.h"
 using namespace std;
 
-void printBinary(int digits);
-string printBinaryRec(string binaries, int digits);
+void printbinary(int digits);
+void printbinaryRec(string binaries, int digits);
 
 int main() {
-    printBinary(4);
+//    printbinary(4);
     return 0;
 }
 
-void printBinary(int digits) {
-    string prefix="";
-    string sequence= printBinaryRec(prefix, digits-1);
-    cout << sequence + "0" << endl;
-    cout << sequence + "1" << endl;
-
+void printbinary(int digits) {
+   string binary_sequence="";
+   printbinaryRec(binary_sequence, digits);
 }
 
-void printBinaryRec(string binaries, int digits) {
-    if (digits == 1) {
-          return binaries;
+void printbinaryRec(string binseq, int digits) {
+    if (digits == 0) {
+          cout << binseq  << endl;
     } else {
-        cout << printBinaryRec( "0" + binaries, digits-1);
-        cout << printBinaryRec( "1" + binaries, digits-1);
+        printbinaryRec( binseq + "0", digits-1);
+        printbinaryRec( binseq + "1", digits-1);
     }
 }
