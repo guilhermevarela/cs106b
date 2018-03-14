@@ -14,7 +14,7 @@ using namespace std;
 void printbinary(int digits);
 void printbinaryRec(string binaries, int digits);
 
-int main() {
+int main_printbinary() {
 //    printbinary(4);
     return 0;
 }
